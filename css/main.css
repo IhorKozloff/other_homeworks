@@ -1,14 +1,29 @@
+
+/* Спецификация */
 body {
-    width: 1600px;
     margin: 0;
     padding: 0;
-    /*background: darkorange;*/
-    background: url(../img/desktop.jpeg) no-repeat center center;
-
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    color: #304041;
+    letter-spacing: 0.05em;
+    
+        
+}
+* {
+    box-sizing: border-box;
+}
+ul, li {
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 h1, h2, h3, h4 {
     margin: 0;
     padding: 0;
+    text-transform: uppercase;
+    font-weight: 800px;
 }
 p {
     margin: 0;
@@ -19,86 +34,137 @@ a {
     margin: 0;
     padding: 0;   
 }
-.main {
-    padding: 90px 230px 165px 230px;
-    /*background: cyan;*/
-
-}  
-.first-desktop {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 200px 185px 325px 185px;
-    /*background: cornflowerblue;*/
-       
-}
-.logo {
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 22px;
-line-height: 27px;
-color: #FFFFFF;
+.container {
+    width: 1140px;
+    margin: 0 auto;
 }
 
-.btn-city {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 800;
-font-size: 15px;
-line-height: 18px;
-text-align: center;
-letter-spacing: 0.05em;
-text-transform: uppercase;
-background: #fff;
-border-radius: 100px;
-padding: 8px 17px;
-color: #000000;
+.btn {
+    display: block;
+    width: 250px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #5F51FF;
+    padding: 18px 0;
+    border-radius: 100px;
+    transition: all 0.5s ease;
+    margin: 0 auto;
 }
+.btn:hover {
+    background: #4737f8;
+}
+
+section {
+    padding: 145px 0;
+}
+
+
+
+
+/* header */
+
+
+header {
+    background: linear-gradient(180deg, rgba(153, 144, 248, 0.23) 1.39%, rgba(95, 81, 255, 0.23) 43.28%), url('../img/desktop.jpeg') no-repeat center top / cover;
+    text-align: center;
+    height: 900px;
+    color: #FFFFFF;
+    padding: 90px 0 80px;
+}
+
 .offer {
     margin-top: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-h1 {
-    font-family: Montserrat;
-font-style: normal;
-font-weight: 800;
-font-size: 60px;
-line-height: 73px;
-text-align: center;
-letter-spacing: 0.145em;
-text-transform: uppercase;
-margin-top: 58px;
-margin-bottom: 24px;
-color: #FFFFFF;
+.offer__message {
+    font-size: 15px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    padding: 8px 17px;
+    background: #FFFFFF;
+    border-radius: 100px;
+    color: #304041;
 }
 
-.message {
-    font-family: 'Montserrat';
-    font-style: normal;
+.offer__tittle {
+    letter-spacing: 0.145em;
+    font-size: 60px;
+    margin: 24px auto;
+}
+
+.offer__txt {
     font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: #FFF;
+    line-height: 1.2;
+    margin-bottom: 24px;
 }
-.btn {
-    margin-top: 24px;
-    font-family: Montserrat;
-font-style: normal;
-font-weight: 800;
-font-size: 16px;
-line-height: 20px;
-text-align: center;
-letter-spacing: 0.05em;
-color: #FFFFFF;
-background: #5F51FF;
-padding: 18px 52px;
-border-radius: 100px;
+
+.arrow {
+    display: block;
+    width: 18px;
+    margin: 215px auto 0 auto;
+    height: 26px;
+    background: url('../img/arrow-down.svg');
+    opacity: 0.5;
+    transition: all 0.5s ease;
+
+}
+.arrow:hover {
+    opacity: 1;
+    
+}
+     
+
+/* section two */
+
+.about {
+    margin: 100px auto;
+    background: url('../img/middle.jpg') no-repeat center right, #F1F0FF;
+    border: 1px solid black;
+}
+
+.txt-content {
+    width: 520px;
+    margin: 115px auto 115px 75px;
+}
+.txt-content__number {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+   color: #789AA0;
+}
+
+.txt-content__history {
+    margin: 45px auto;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.txt-content__arrow-horizontal {
+    
+    display: block;
+    width: 70px;
+    height: 15px;
+    background: url('../img/arrow-next.svg');
+    opacity: 0.5;
+
+}
+.txt-content__arrow-horizontal:hover {
+opacity: 1;
+}
+.second-desctop-btn {
+    border: 1px solid #5F51FF;
+    background: #FFF;
+    color: blue;
+    transition: all 0.5s ease;
+}
+.second-desctop-btn:hover {
+    color: cornsilk;
+    transition: all 0.5s ease;
 }
