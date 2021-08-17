@@ -132,7 +132,7 @@ header {
     height: 650px;
     margin: 100px auto;
     background: url('../img/middle-town.jpg') no-repeat right top / 490px 650px, #F1F0FF;
-    border: 1px solid black;
+   
 }
 
 .txt-content {
