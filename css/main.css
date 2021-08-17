@@ -4,13 +4,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
+    font-style: normal;
+    font-weight: 500;
     font-size: 16px;
     color: #304041;
     letter-spacing: 0.05em;
-    
-        
+            
 }
+
 * {
     box-sizing: border-box;
 }
@@ -23,7 +24,7 @@ h1, h2, h3, h4 {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
-    font-weight: 800px;
+    font-weight: 800;
 }
 p {
     margin: 0;
@@ -37,6 +38,11 @@ a {
 .container {
     width: 1140px;
     margin: 0 auto;
+}
+.container_full-height {
+    height: 626px;
+    display: flex;
+    align-items: center;
 }
 
 .btn {
@@ -82,6 +88,7 @@ header {
 
 .offer__message {
     font-size: 15px;
+    font-weight: 800;
     line-height: 1.2;
     text-transform: uppercase;
     padding: 8px 17px;
@@ -122,8 +129,9 @@ header {
 /* section two */
 
 .about {
+    height: 650px;
     margin: 100px auto;
-    background: url('../img/middle.jpg') no-repeat center right, #F1F0FF;
+    background: url('../img/middle-town.jpg') no-repeat right top / 490px 650px, #F1F0FF;
     border: 1px solid black;
 }
 
@@ -137,7 +145,7 @@ header {
     line-height: 1.2;
     text-transform: uppercase;
     margin-bottom: 20px;
-   color: #789AA0;
+    color: #789AA0;
 }
 
 .txt-content__history {
@@ -168,3 +176,51 @@ opacity: 1;
     color: cornsilk;
     transition: all 0.5s ease;
 }
+h2 {
+    text-align: center;
+}
+.story-content{ 
+    background: #fff url('../img/block-175622.jpg') no-repeat right top / 53%;
+    margin-top: 93px;
+
+}
+.story-content_list {
+    width: 407px;
+}
+.story-content__item:before {
+    content: "";
+    display: block;
+    width: 63px;
+    height: 7px;
+    background: #5F51FF;
+    border-radius: 23px;
+    margin-bottom: 15px;
+}
+.story-content__item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #304041; 
+}
+.story-content__item:not(:first-child){
+    margin-top: 57px;
+}
+.third-desktop {
+    padding-bottom: 147px;
+}
+footer {
+    padding-bottom: 165px;
+}
+.footer-content {
+    display: flex;
+}
+.footer-txt {
+margin-right: 60px;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+color: #5C7677;
+}
+
+
